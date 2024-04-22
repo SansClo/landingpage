@@ -1,0 +1,49 @@
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 10px;
+}
+
+/* Hero Section Styles */
+.hero {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #f0f0f0;
+  /* Ensure the footer does not cover content */
+  z-index: 1000; /* Optional: Ensure the footer stays on top */
+}
+
+/* Adjust main content padding to prevent it from being covered by the footer */
+/* This can be adjusted as per the height of your footer */
+body {
+  padding-bottom: 60px; /* Adjust this value based on the actual height of your footer */
+}
+
+/* Existing Footer Styles - They might not be necessary with the adjustments above */
+.site-footer {
+  flex-shrink: 0;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #f3f3f3;
+  border-top: 1px solid #e1e1e1;
+}
